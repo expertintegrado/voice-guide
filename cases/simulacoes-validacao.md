@@ -151,4 +151,4 @@
 
 ## Como replicar isso pro seu Voice Guide
 
-Quer rodar o mesmo teste no seu? Veja [`03-validacao.md`](../03-validacao.md) — protocolo A/B com 3 pares pergunta→resposta reais.
+Quer rodar o mesmo teste no seu? Veja [`03-validacao.md`](../pipeline/03-validacao.md) — protocolo A/B com 3 pares pergunta→resposta reais.

@@ -33,7 +33,7 @@ Claude.ai aciona a skill automaticamente quando você pedir algo no escopo dela 
 - Campo `name` no frontmatter deve ser **lowercase**, só letras/números/hífen
 - Campo `description` é o que dispara a skill — descreva quando ativar
 
-> Template pronto: ver [`skill/voice-apply/SKILL.md`](skill/voice-apply/SKILL.md) deste repo.
+> Template pronto: ver [`skill/voice-apply/SKILL.md`](../skill/voice-apply/SKILL.md) deste repo.
 
 ---
 
@@ -160,4 +160,4 @@ Voz evolui — re-extraia o guide a cada 6-12 meses (ver [`03-validacao.md`](03-
 
 ---
 
-Próximo passo: pega o [`templates/voice-guide-template.md`](templates/voice-guide-template.md), começa o seu, e plugue.
+Próximo passo: pega o [`templates/voice-guide-template.md`](../templates/voice-guide-template.md), começa o seu, e plugue.
