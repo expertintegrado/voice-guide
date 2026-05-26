@@ -5,7 +5,7 @@
 ## O que foi feito
 
 ### Repo publicado
-- **URL:** https://github.com/ericlucianoferreira/voice-guide-aula (público)
+- **URL:** https://github.com/expertintegrado/voice-guide (público)
 - **Local:** `C:\repos\voice-guide-aula\`
 - **Branch:** `main`
 - **Commit:** `feat: material inicial da aula Voice Guide + Brand Voice` (26c4e3c)
@@ -45,7 +45,7 @@
      Abre `http://127.0.0.1:8000/slides.html` no browser
    - **Opção B** (alternativa): salva `slides.html` na pasta `Eventos/` do educacional submodule e abre direto pelo arquivo
 2. Abre tela cheia (`F` no reveal.js)
-3. Tem o link pronto: `github.com/ericlucianoferreira/voice-guide-aula` (mostra no slide final)
+3. Tem o link pronto: `github.com/expertintegrado/voice-guide` (mostra no slide final)
 
 ### Durante a aula (20min)
 - Slide 1 (cover) — 30s
@@ -60,7 +60,7 @@
 - **Total: ~20min**
 
 ### Pós-aula
-- Manda o link no grupo da mentoria: `github.com/ericlucianoferreira/voice-guide-aula`
+- Manda o link no grupo da mentoria: `github.com/expertintegrado/voice-guide`
 - Pede que tragam o Voice Guide v0.1 na próxima mentoria
 
 ## Troubleshooting
@@ -96,7 +96,7 @@ Slides puxam CDN. Se for projetar offline, baixa o reveal.js pra `lib/` local e 
 
 ## Links rápidos pra abrir manhã
 
-- Repo: https://github.com/ericlucianoferreira/voice-guide-aula
+- Repo: https://github.com/expertintegrado/voice-guide
 - Slides (local): `C:\repos\voice-guide-aula\slides.html`
 - Brain note: `mcp__expert-brain__get_note id="pj4a9efeo6nw"`
 - Voice Guide canônico (privado): `C:\repos\voice-guide\voice-guide.md`
