@@ -287,19 +287,20 @@
     <h2>Onde <span style="color: var(--cyan-deep)">plugar</span></h2>
     <table style="margin-top: 1cqh;">
       <thead>
-        <tr><th style="width: 22%;">Ferramenta</th><th style="width: 42%;">Como ativa</th><th>Pra que serve</th></tr>
+        <tr><th style="width: 22%;">Ferramenta</th><th style="width: 46%;">Como ativa</th><th>Pra que serve</th></tr>
       </thead>
       <tbody>
+        <tr><td>Claude Code</td><td><code>~/.claude/CLAUDE.md</code> <em>ou</em> skill em <code>~/.claude/skills/</code></td><td>Tudo que sai do terminal</td></tr>
+        <tr><td>OpenClaw</td><td><code>SOUL.md</code> (canone do agente na VPS)</td><td>Agente 24/7, atendimento</td></tr>
         <tr><td>Claude.ai</td><td><strong>Skill</strong> (Settings → Capabilities → Customize → Skills)</td><td>Conversa diária, redação</td></tr>
-        <tr><td>Claude Code / OpenClaw</td><td><code>~/.claude/CLAUDE.md</code> <em>ou</em> skill em <code>~/.claude/skills/</code></td><td>Tudo que sai do terminal</td></tr>
         <tr><td>ChatGPT</td><td><strong>Custom GPT</strong> (Instructions + Knowledge)</td><td>Geração de copy, posts, e-mails</td></tr>
         <tr><td>Gemini</td><td><strong>Gem</strong> (Instructions + Knowledge)</td><td>Idem</td></tr>
       </tbody>
     </table>
-    <p style="margin-top: 2cqh; font-size: 1.3cqw; color: var(--slate-600); line-height: 1.5;">
-      <strong>Mesmo <code>voice-guide.md</code></strong> em 4 ferramentas. Voz consistente sem precisar copiar e colar prompt toda hora.
+    <p style="margin-top: 1.5cqh; font-size: 1.25cqw; color: var(--slate-600); line-height: 1.5;">
+      <strong>Mesmo <code>voice-guide.md</code></strong> em 5 ferramentas. Voz consistente sem copiar e colar prompt toda vez.
     </p>
-    <p style="margin-top: 1cqh; font-size: 1.1cqw; color: var(--slate-500); line-height: 1.4;">
+    <p style="margin-top: 0.8cqh; font-size: 1cqw; color: var(--slate-500); line-height: 1.4;">
       Formato Agent Skills virou padrão aberto em dez/2025 (agentskills.io) — OpenAI adotou pra ChatGPT/Codex CLI também.
     </p>
     <div class="footer"><span class="brand">Voice Guide &nbsp;·&nbsp; <span class="at">@ericluciano</span></span></div>
@@ -309,26 +310,27 @@
   <section class="slide">
     <span class="kicker">Como construir</span>
     <h2>Pipeline em <span style="color: var(--cyan-deep)">4 passos</span></h2>
-    <div style="margin-top: 1.5cqh;">
+    <p style="font-size: 1.2cqw; color: var(--slate-500); margin-bottom: 1cqh;">Cada passo tem prompt pronto no repo: <code>github.com/ericlucianoferreira/voice-guide-aula</code></p>
+    <div>
       <div class="step-row">
         <div class="step-num">1</div>
-        <div><b>Coletar</b> — WhatsApp exportado, transcrição Zoom, e-mails, posts. <span class="muted">200-500 msgs em 3+ contextos.</span></div>
+        <div><b>Coletar</b> — WhatsApp exportado, transcrição Zoom, e-mails, posts. <span class="muted">→ passo a passo em <code>01-coleta.md</code></span></div>
       </div>
       <div class="step-row">
         <div class="step-num">2</div>
-        <div><b>Extrair</b> — corpus + prompt mestre no Claude/GPT/Gemini. <span class="muted">Modelo gera o guide estruturado.</span></div>
+        <div><b>Extrair</b> — cola corpus + prompt mestre no Claude/ChatGPT/Gemini. <span class="muted">→ prompt pronto em <code>02-prompt-mestre.md</code></span></div>
       </div>
       <div class="step-row">
         <div class="step-num">3</div>
-        <div><b>Validar</b> — A/B com 3 pares pergunta→resposta reais. <span class="muted">IA vs você. Quem te conhece distingue?</span></div>
+        <div><b>Validar</b> — A/B com 3 pares pergunta→resposta reais. <span class="muted">→ protocolo em <code>03-validacao.md</code></span></div>
       </div>
       <div class="step-row">
         <div class="step-num">4</div>
-        <div><b>Ativar</b> — instalar como skill / Custom GPT / Gem nas ferramentas do slide anterior. <span class="muted">A voz roda em todos os canais.</span></div>
+        <div><b>Ativar</b> — skill / Custom GPT / Gem nas 5 ferramentas. <span class="muted">→ <code>04-ativacao.md</code> + skill em <code>skill/voice-apply/</code></span></div>
       </div>
     </div>
-    <p style="margin-top: 2.5cqh; font-size: 1.4cqw; color: var(--slate-600); text-align: center;">
-      Tudo isso com o material que você <strong>já gerou</strong>. Sem treinar modelo nenhum.
+    <p style="margin-top: 2cqh; font-size: 1.3cqw; color: var(--slate-600); text-align: center;">
+      Tudo com o material que você <strong>já gerou</strong>. Sem treinar modelo nenhum.
     </p>
     <div class="footer"><span class="brand">Voice Guide &nbsp;·&nbsp; <span class="at">@ericluciano</span></span></div>
   </section>
@@ -352,7 +354,7 @@
       </div>
       <div class="step-row">
         <div class="step-num">4</div>
-        <div style="color: var(--slate-50);">Cole no Claude com o <b>prompt mestre</b> → gera seu guide</div>
+        <div style="color: var(--slate-50);">Cole no Claude o <b>prompt mestre</b> que está em <code>02-prompt-mestre.md</code> → gera seu guide</div>
       </div>
       <div class="step-row">
         <div class="step-num">5</div>

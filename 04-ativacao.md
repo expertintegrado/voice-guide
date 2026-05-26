@@ -37,7 +37,7 @@ Claude.ai aciona a skill automaticamente quando você pedir algo no escopo dela 
 
 ---
 
-## 2. Claude Code / OpenClaw (terminal)
+## 2. Claude Code (terminal local)
 
 Duas opções, escolha conforme o uso:
 
@@ -66,11 +66,33 @@ Em sessão Claude Code, basta dizer:
 - "responde esse cliente como eu falaria"
 - "rascunha email pra X"
 
-**OpenClaw** (Claude Code remoto) segue o mesmo padrão — skills em `~/.claude/skills/` do container.
+---
+
+## 3. OpenClaw (agente 24/7 na VPS)
+
+OpenClaw é o agente da Mentoria que roda na VPS Hostinger. **Não usa `CLAUDE.md`** — tem canone próprio de arquivos na raiz: `SOUL.md`, `IDENTITY.md`, `AGENTS.md`, `USER.md`, `TOOLS.md`, `HEARTBEAT.md`, `MEMORY.md`.
+
+### Onde plugar o voice guide
+O Voice Guide entra no **`SOUL.md`** (carta de identidade do agente) ou referenciado dele.
+
+### Setup
+1. Acesse o repo do seu agente OpenClaw (estrutura `estrutura-inteligente`)
+2. Edita `SOUL.md` adicionando:
+   ```markdown
+   ## Voice Guide
+   Toda comunicação externa (WhatsApp, e-mail, post) que sair em nome do
+   [dono] deve aplicar o voice guide abaixo:
+
+   [cole o conteúdo do voice-guide.md aqui — máx ~12KB pra não truncar]
+   ```
+3. Commit + push pro repo
+4. Próxima sessão do agente carrega automaticamente
+
+**Atenção:** OpenClaw trunca silenciosamente arquivos > ~12KB no bootstrap. Se seu voice guide for grande, mantém só TL;DR + anti-padrões críticos no `SOUL.md` e referencia o arquivo completo em `memory/`.
 
 ---
 
-## 3. ChatGPT (Custom GPT)
+## 4. ChatGPT (Custom GPT)
 
 Requer ChatGPT Plus ou superior.
 
@@ -96,7 +118,7 @@ Em conversa nova com esse GPT, pede direto: "redige follow-up pra lead X". Aplic
 
 ---
 
-## 4. Gemini (Gems)
+## 5. Gemini (Gems)
 
 Disponível pra todas as contas Gemini (web + mobile).
 
@@ -118,8 +140,9 @@ Se seu corpus de referência cresceu (vários exemplos, casos, anti-padrões exp
 
 | Ferramenta | Como ativa | Pré-requisito |
 |---|---|---|
+| **Claude Code** | `~/.claude/CLAUDE.md` ou skill em `~/.claude/skills/` | Claude Code instalado |
+| **OpenClaw** | `SOUL.md` (canone do agente, NÃO usa CLAUDE.md) | Agente OpenClaw rodando na VPS |
 | **Claude.ai** | Skill (Settings → Customize → Skills) | Pro+ |
-| **Claude Code / OpenClaw** | `~/.claude/CLAUDE.md` ou `~/.claude/skills/` | Claude Code instalado |
 | **ChatGPT** | Custom GPT (Instructions + Knowledge) | Plus+ |
 | **Gemini** | Gem (Instructions + Knowledge) | Conta Gemini |
 
