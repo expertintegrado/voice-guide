@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Guide — Mentoria Eric Luciano</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+  <style>
+    :root {
+      --accent: #FFB200;
+      --accent-2: #4FC3F7;
+      --green: #66BB6A;
+      --red: #EF5350;
+    }
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; letter-spacing: -0.02em; }
+    .reveal h1 { color: var(--accent); font-weight: 800; }
+    .reveal h2 { color: var(--accent); font-weight: 700; }
+    .reveal h3 { color: var(--accent-2); font-weight: 600; }
+    .reveal .accent { color: var(--accent); }
+    .reveal .green { color: var(--green); }
+    .reveal .red { color: var(--red); }
+    .reveal .muted { color: #888; }
+    .reveal .small { font-size: 0.7em; }
+    .reveal table { font-size: 0.65em; margin: 0.5em auto; }
+    .reveal table th { background: rgba(255, 178, 0, 0.15); color: var(--accent); border-bottom: 2px solid var(--accent); }
+    .reveal table td, .reveal table th { padding: 0.4em 0.8em; border: 1px solid #333; }
+    .reveal pre { font-size: 0.55em; box-shadow: none; }
+    .reveal pre code { padding: 0.8em; border-radius: 6px; }
+    .reveal .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; }
+    .reveal .box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 1em 1.2em;
+    }
+    .reveal .box-bad { border-color: var(--red); background: rgba(239, 83, 80, 0.08); }
+    .reveal .box-good { border-color: var(--green); background: rgba(102, 187, 106, 0.08); }
+    .reveal .box-title {
+      font-size: 0.65em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.4em;
+      font-weight: 700;
+    }
+    .reveal .box-bad .box-title { color: var(--red); }
+    .reveal .box-good .box-title { color: var(--green); }
+    .reveal .footnote {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+      font-size: 0.5em;
+      color: #666;
+    }
+    .reveal blockquote {
+      border-left: 4px solid var(--accent);
+      background: rgba(255, 178, 0, 0.06);
+      padding: 0.8em 1.2em;
+      font-style: normal;
+      font-size: 0.85em;
+    }
+    .reveal ul li { margin: 0.3em 0; }
+    .reveal .big-number {
+      font-size: 3em;
+      color: var(--accent);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .reveal .step {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      margin: 0.4em 0;
+      font-size: 0.85em;
+    }
+    .reveal .step-num {
+      background: var(--accent);
+      color: #000;
+      width: 1.8em;
+      height: 1.8em;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- =========== SLIDE 0: COVER =========== -->
+      <section>
+        <h1 style="font-size: 2.5em;">Voice Guide</h1>
+        <h3 style="color: white; font-weight: 300; margin-top: 0;">Como fazer a IA falar como você (ou como sua marca)</h3>
+        <p class="muted" style="margin-top: 2em;">Mentoria — Eric Luciano</p>
+      </section>
+
+      <!-- =========== SLIDE 1: VOICE × BRAND =========== -->
+      <section>
+        <h2>Voice Guide × Brand Voice</h2>
+        <p class="muted small">Antes de tudo: são coisas DIFERENTES.</p>
+
+        <table>
+          <thead>
+            <tr><th></th><th>Voice Guide</th><th>Brand Voice</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><b>Sujeito</b></td><td>Uma pessoa</td><td>Uma marca/empresa</td></tr>
+            <tr><td><b>Pergunta</b></td><td>Como <b>EU</b> comunico?</td><td>Como a <b>EMPRESA</b> comunica?</td></tr>
+            <tr><td><b>Origem</b></td><td>Empírica (mensagens reais)</td><td>Estratégica (liderança)</td></tr>
+            <tr><td><b>Usa quem</b></td><td>IA falando no seu nome</td><td>Time falando pela empresa</td></tr>
+            <tr><td><b>Quando</b></td><td>Você é a marca</td><td>Equipe escreve em vários canais</td></tr>
+          </tbody>
+        </table>
+
+        <p class="small" style="margin-top: 1em;">
+          <span class="accent">Empresa solo (você É a marca)</span> → colapsa em 1 só. Comece pelo Voice.
+        </p>
+      </section>
+
+      <!-- =========== SLIDE 2: POR QUE IMPORTA =========== -->
+      <section>
+        <h2>Por que isso importa</h2>
+
+        <div class="columns" style="margin-top: 1em;">
+          <div class="box">
+            <div class="box-title">O problema</div>
+            <ul class="small">
+              <li>CEO/dono não escala 1:1</li>
+              <li>Mensagem precisa escalar</li>
+              <li>Cada agente, automação, copywriter inventa do zero</li>
+              <li>Resultado: marca diluída, lead estranha o tom</li>
+            </ul>
+          </div>
+          <div class="box box-good">
+            <div class="box-title">A solução</div>
+            <ul class="small">
+              <li>Documentar o jeito de comunicar</li>
+              <li>Léxico + ritmo + anti-padrões</li>
+              <li>IA aplica em TODA execução</li>
+              <li>Você escala sem perder identidade</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="small accent" style="margin-top: 1.5em;">
+          A voz vira ativo da empresa. Documentada, versionada, plugável.
+        </p>
+      </section>
+
+      <!-- =========== SLIDE 3: ANATOMIA =========== -->
+      <section>
+        <h2>Anatomia de um Voice Guide</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.8em; margin-top: 1em; font-size: 0.7em;">
+          <div class="box">
+            <div class="box-title accent">1. Léxico núcleo</div>
+            Palavras-assinatura (que aparecem muito) + vocabulário evitado (que NUNCA aparece). Jargões pessoais.
+          </div>
+          <div class="box">
+            <div class="box-title accent">2. Sintaxe e ritmo</div>
+            Tamanho de frase, abreviações, pontuação, emoji, caixa alta. O "som" da escrita.
+          </div>
+          <div class="box">
+            <div class="box-title accent">3. Modulação por contexto</div>
+            Como o tom MUDA: lead frio × cliente × equipe × parceiro × íntimo.
+          </div>
+          <div class="box">
+            <div class="box-title accent">4. Padrões retóricos</div>
+            Como você ABRE, FECHA, DISCORDA, ENSINA, PEDE AÇÃO.
+          </div>
+          <div class="box">
+            <div class="box-title accent">5. Identidade e valores</div>
+            Postura, não missão. "Frontalidade > polidez", "ROI provado > promessa".
+          </div>
+          <div class="box box-bad">
+            <div class="box-title">6. Anti-padrões</div>
+            Coisas que você NUNCA faria. Fingerprint claro de "não foi eu".
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== SLIDE 4: PIPELINE =========== -->
+      <section>
+        <h2>Pipeline em 4 passos</h2>
+
+        <div style="margin-top: 1.5em;">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div><b class="accent">Coletar</b> — WhatsApp exportado, transcrição Zoom, e-mails enviados, posts. <span class="muted">200-500 msgs mínimo, em 3+ contextos.</span></div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div><b class="accent">Extrair</b> — colar corpus + prompt mestre no Claude/GPT/Gemini. <span class="muted">Modelo gera o guide estruturado.</span></div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div><b class="accent">Validar</b> — A/B com 3 pares pergunta→resposta reais. <span class="muted">IA vs você. Sua mãe distingue?</span></div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div><b class="accent">Ativar</b> — plugar em Claude.ai Project, ChatGPT Custom GPT, n8n, e-mail. <span class="muted">A voz roda em todos os canais.</span></div>
+          </div>
+        </div>
+
+        <p class="small muted" style="margin-top: 1.5em;">
+          Tudo isso, com o material que você já gerou. Sem treinar modelo nenhum.
+        </p>
+      </section>
+
+      <!-- =========== SLIDE 5: ONDE PLUGAR =========== -->
+      <section>
+        <h2>Onde plugar o Voice Guide</h2>
+
+        <table style="font-size: 0.6em;">
+          <thead>
+            <tr><th>Ferramenta</th><th>Como ativa</th><th>Pra que serve</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Claude.ai</b></td>
+              <td>Project knowledge + custom instructions</td>
+              <td>Conversa diária, redação</td>
+            </tr>
+            <tr>
+              <td><b>ChatGPT</b></td>
+              <td>Custom GPT</td>
+              <td>Geração de copy, e-mails</td>
+            </tr>
+            <tr>
+              <td><b>Gemini</b></td>
+              <td>Gems</td>
+              <td>Idem</td>
+            </tr>
+            <tr>
+              <td><b>Claude Code</b></td>
+              <td>~/.claude/CLAUDE.md + voice-guide.md</td>
+              <td>Tudo que sai do terminal</td>
+            </tr>
+            <tr>
+              <td><b>n8n / Zapier / Make</b></td>
+              <td>System prompt do node LLM</td>
+              <td>Automação: CRM, WhatsApp, e-mail</td>
+            </tr>
+            <tr>
+              <td><b>WhatsApp / SAC</b></td>
+              <td>Agente (Z-API / ChatGuru / MCP)</td>
+              <td>Atendimento, follow-up automático</td>
+            </tr>
+            <tr>
+              <td><b>E-mail / propostas</b></td>
+              <td>Manual (gera no Claude e cola)</td>
+              <td>Comunicação importante</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small accent" style="margin-top: 1em;">
+          Mesmo guide. Múltiplos canais. Voz consistente em todos.
+        </p>
+      </section>
+
+      <!-- =========== SLIDE 6: DEMO ANTES/DEPOIS =========== -->
+      <section>
+        <h2>Demo — antes/depois</h2>
+        <p class="muted small">Cenário: follow-up de lead que sumiu</p>
+
+        <div class="columns" style="margin-top: 1em;">
+          <div class="box box-bad">
+            <div class="box-title">❌ Sem Voice Guide</div>
+            <p style="font-size: 0.7em; line-height: 1.4;">
+              "Olá João, espero que esteja bem! Gostaria de retomar nossa conversa sobre a Mentoria. Você teve a oportunidade de avaliar a proposta? Fico no aguardo do seu retorno. Atenciosamente, Eric."
+            </p>
+          </div>
+          <div class="box box-good">
+            <div class="box-title">✅ Com Voice Guide</div>
+            <p style="font-size: 0.7em; line-height: 1.4;">
+              "Fala João, beleza? Conseguiu olhar a proposta? Tô fechando a lista da próxima edição, me confirma. Bora?"
+            </p>
+          </div>
+        </div>
+
+        <p class="small" style="margin-top: 1.2em;">
+          <b class="accent">Regras aplicadas:</b> opener canônico <code>Fala [Nome], beleza?</code> · escassez real (<code>tô fechando a lista</code>) · fechamento low-pressure (<code>Bora?</code>) · zero formalidade fria
+        </p>
+
+        <p class="footnote">Voice Guide do Eric — extraído de 13.526 msgs reais</p>
+      </section>
+
+      <!-- =========== SLIDE 7: LIÇÃO DE CASA =========== -->
+      <section>
+        <h2>Lição de casa</h2>
+
+        <div style="margin-top: 1em;">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>Clone o repo: <code>github.com/ericlucianoferreira/voice-guide-aula</code></div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>Leia na ordem os 5 arquivos numerados (~15min)</div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>Colete material: 200+ msgs em 3 contextos diferentes</div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>Cole no Claude.ai com o <b class="accent">prompt mestre</b> → gera seu guide</div>
+          </div>
+          <div class="step">
+            <div class="step-num">5</div>
+            <div>Valide com 3 pares pergunta→resposta. Itere.</div>
+          </div>
+          <div class="step">
+            <div class="step-num">6</div>
+            <div>Pluga em 1 ferramenta que você já usa. Mede diferença.</div>
+          </div>
+        </div>
+
+        <blockquote style="margin-top: 1em; font-size: 0.7em;">
+          Próxima mentoria: traz seu Voice Guide v0.1. A gente refina junto.
+        </blockquote>
+      </section>
+
+      <!-- =========== END =========== -->
+      <section>
+        <h1>Bora?</h1>
+        <p class="muted" style="margin-top: 2em;">github.com/ericlucianoferreira/voice-guide-aula</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      controls: true,
+      progress: true,
+      transition: 'slide',
+      transitionSpeed: 'fast',
+      plugins: [RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+</html>

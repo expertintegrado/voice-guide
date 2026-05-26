@@ -1,0 +1,109 @@
+# Checklist da aula — leia ao acordar
+
+> Documento de handoff. Aula de 20min sobre Voice Guide + Brand Voice, mentoria.
+
+## O que foi feito
+
+### Repo publicado
+- **URL:** https://github.com/ericlucianoferreira/voice-guide-aula (público)
+- **Local:** `C:\repos\voice-guide-aula\`
+- **Branch:** `main`
+- **Commit:** `feat: material inicial da aula Voice Guide + Brand Voice` (26c4e3c)
+
+### Conteúdo entregue
+
+| Arquivo | Pra que serve | Status |
+|---|---|---|
+| `README.md` | Mapa do repo, ordem de leitura | ✅ |
+| `00-voice-vs-brand.md` | Diferença didática Voice × Brand | ✅ |
+| `01-coleta.md` | Como coletar material (WhatsApp/Zoom/e-mail) | ✅ |
+| `02-prompt-mestre.md` | **O coração** — prompt pronto pra colar no Claude/GPT | ✅ |
+| `03-validacao.md` | Protocolo A/B simplificado | ✅ |
+| `04-ativacao.md` | Como plugar em Claude.ai/Code/ChatGPT/Gemini/n8n | ✅ |
+| `templates/voice-guide-template.md` | Esqueleto pessoal | ✅ |
+| `templates/brand-voice-template.md` | Esqueleto institucional | ✅ |
+| `skill/voice-apply/SKILL.md` | Skill opcional pra Claude Code | ✅ |
+| `cases/exemplo-eric-sanitizado.md` | Seu Voice Guide v1.3 sanitizado como exemplo | ✅ |
+| `cases/simulacoes-validacao.md` | 5 simulações antes/depois com seu guide | ✅ |
+| `slides.html` | 9 slides reveal.js dark mode | ✅ |
+
+### Brain
+- Nota `pj4a9efeo6nw` salva ([voice-guide-aula — material de mentoria distribuível])
+- 2 edges criados:
+  - `depends_on` → `yasak98uo4z4` (Voice Guide v1.3 do Eric)
+  - `same_mechanism_as` → `0mkxum5t4yz6` (Pattern Voice-Aware Skill)
+
+## Como rodar a aula amanhã
+
+### Pré-aula (5min antes)
+1. Abre os slides:
+   - **Opção A** (mais simples): roda local —
+     ```
+     cd C:\repos\voice-guide-aula
+     python -m http.server 8000 --directory .
+     ```
+     Abre `http://127.0.0.1:8000/slides.html` no browser
+   - **Opção B** (alternativa): salva `slides.html` na pasta `Eventos/` do educacional submodule e abre direto pelo arquivo
+2. Abre tela cheia (`F` no reveal.js)
+3. Tem o link pronto: `github.com/ericlucianoferreira/voice-guide-aula` (mostra no slide final)
+
+### Durante a aula (20min)
+- Slide 1 (cover) — 30s
+- Slide 2 (Voice × Brand) — 2min, ponto-chave: empresa solo colapsa em 1 só
+- Slide 3 (Por que importa) — 2min, "CEO não escala, mensagem sim"
+- Slide 4 (Anatomia) — 3min, mostrar os 6 componentes
+- Slide 5 (Pipeline 4 passos) — 3min
+- Slide 6 (Onde plugar) — 2min, ênfase: voice guide é UNIVERSAL
+- Slide 7 (Demo antes/depois) — 3min, leia os 2 textos em voz alta, compara
+- Slide 8 (Lição de casa) — 3min, mostra o link, pede que clonem
+- Slide 9 (Bora?) — 2min Q&A
+- **Total: ~20min**
+
+### Pós-aula
+- Manda o link no grupo da mentoria: `github.com/ericlucianoferreira/voice-guide-aula`
+- Pede que tragam o Voice Guide v0.1 na próxima mentoria
+
+## Troubleshooting
+
+### Servidor python já em uso (8765 ocupado)
+Já testei e tem outro python rodando na 8765. **Use 8000 ou outra porta** que comando acima usa.
+
+### Slides não abrem
+Verifique se está na pasta correta:
+```
+cd C:\repos\voice-guide-aula
+ls slides.html  # deve listar o arquivo
+```
+
+### Reveal.js não carrega (sem internet)
+Slides puxam CDN. Se for projetar offline, baixa o reveal.js pra `lib/` local e ajusta os `<link>` e `<script>` no HTML.
+
+### Aluno pergunta "preciso do MCP do Eric?"
+**NÃO.** Material foi construído pra rodar 100% via Claude.ai (ou ChatGPT/Gemini). O MCP do Eric é especificidade dele, alunos rodam o prompt mestre direto na IA.
+
+## Pontos pra você revisar antes da aula
+
+1. **Abre o `slides.html` agora e passa pelos 9 slides em ~2min.** Testa se tela está ok pro projetor que você vai usar.
+2. **Lê o `cases/simulacoes-validacao.md`** — 5 minutos. São os exemplos que você pode citar se aluno pedir "mostra mais um caso".
+3. **Revisa o `cases/exemplo-eric-sanitizado.md`** — confirma se a sanitização tá ok pra ficar público (mantive: gírias como mano/cara/trampo/doideira/véi/galera/kkk; removi: vocabulário pessoal/familiar e intensificadores fortes).
+
+## O que tá pendente (você decide se faz)
+
+1. **Identidade visual**: paleta atual é `#FFB200` accent + preto. Se quiser ajustar pra teu padrão Expert Integrado, edita o `<style>` no início do `slides.html` (variáveis CSS `--accent`).
+2. **Speaker notes**: slides não têm notas pro apresentador. Se quiser, abre `?print-pdf` no URL e tem notas embaixo. Posso adicionar amanhã se pedir.
+3. **PDF export**: pra mandar pros alunos como suplemento — abre `slides.html?print-pdf`, imprime como PDF.
+4. **README do submodule educacional**: se quiser que esse repo apareça no submodule `educacional/`, basta linkar no README do educacional.
+
+## Links rápidos pra abrir manhã
+
+- Repo: https://github.com/ericlucianoferreira/voice-guide-aula
+- Slides (local): `C:\repos\voice-guide-aula\slides.html`
+- Brain note: `mcp__expert-brain__get_note id="pj4a9efeo6nw"`
+- Voice Guide canônico (privado): `C:\repos\voice-guide\voice-guide.md`
+
+---
+
+**Tempo gasto na construção:** ~3h
+**Validado em:** slides renderizam corretamente, conteúdo revisado, links cruzados batem, 5 simulações com seu Voice Guide documentadas
+
+Bom dia. Bora?
