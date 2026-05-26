@@ -17,3 +17,6 @@ dist/
 *.key
 .env
 .env.local
+
+# Internal planning docs (specs e planos de implementação)
+docs/
