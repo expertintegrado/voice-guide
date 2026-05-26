@@ -281,7 +281,31 @@
     <div class="footer"><span class="brand">Voice Guide &nbsp;·&nbsp; <span class="at">@ericluciano</span></span></div>
   </section>
 
-  <!-- 06 — PIPELINE -->
+  <!-- 06 — ONDE PLUGAR -->
+  <section class="slide">
+    <span class="kicker">Onde rodar</span>
+    <h2>Onde <span style="color: var(--cyan-deep)">plugar</span></h2>
+    <table style="margin-top: 1cqh;">
+      <thead>
+        <tr><th style="width: 22%;">Ferramenta</th><th style="width: 42%;">Como ativa</th><th>Pra que serve</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Claude.ai</td><td><strong>Skill</strong> (Settings → Capabilities → Customize → Skills)</td><td>Conversa diária, redação</td></tr>
+        <tr><td>Claude Code / OpenClaw</td><td><code>~/.claude/CLAUDE.md</code> <em>ou</em> skill em <code>~/.claude/skills/</code></td><td>Tudo que sai do terminal</td></tr>
+        <tr><td>ChatGPT</td><td><strong>Custom GPT</strong> (Instructions + Knowledge)</td><td>Geração de copy, posts, e-mails</td></tr>
+        <tr><td>Gemini</td><td><strong>Gem</strong> (Instructions + Knowledge)</td><td>Idem</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 2cqh; font-size: 1.3cqw; color: var(--slate-600); line-height: 1.5;">
+      <strong>Mesmo <code>voice-guide.md</code></strong> em 4 ferramentas. Voz consistente sem precisar copiar e colar prompt toda hora.
+    </p>
+    <p style="margin-top: 1cqh; font-size: 1.1cqw; color: var(--slate-500); line-height: 1.4;">
+      Formato Agent Skills virou padrão aberto em dez/2025 (agentskills.io) — OpenAI adotou pra ChatGPT/Codex CLI também.
+    </p>
+    <div class="footer"><span class="brand">Voice Guide &nbsp;·&nbsp; <span class="at">@ericluciano</span></span></div>
+  </section>
+
+  <!-- 07 — PIPELINE -->
   <section class="slide">
     <span class="kicker">Como construir</span>
     <h2>Pipeline em <span style="color: var(--cyan-deep)">4 passos</span></h2>
@@ -300,35 +324,11 @@
       </div>
       <div class="step-row">
         <div class="step-num">4</div>
-        <div><b>Ativar</b> — plugar em Claude Project, ChatGPT, n8n, e-mail. <span class="muted">A voz roda em todos os canais.</span></div>
+        <div><b>Ativar</b> — instalar como skill / Custom GPT / Gem nas ferramentas do slide anterior. <span class="muted">A voz roda em todos os canais.</span></div>
       </div>
     </div>
     <p style="margin-top: 2.5cqh; font-size: 1.4cqw; color: var(--slate-600); text-align: center;">
       Tudo isso com o material que você <strong>já gerou</strong>. Sem treinar modelo nenhum.
-    </p>
-    <div class="footer"><span class="brand">Voice Guide &nbsp;·&nbsp; <span class="at">@ericluciano</span></span></div>
-  </section>
-
-  <!-- 07 — ONDE PLUGAR -->
-  <section class="slide">
-    <span class="kicker">Universal</span>
-    <h2>Onde <span style="color: var(--cyan-deep)">plugar</span></h2>
-    <table style="margin-top: 1cqh;">
-      <thead>
-        <tr><th style="width: 25%;">Ferramenta</th><th style="width: 40%;">Como ativa</th><th>Pra que serve</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Claude.ai</td><td>Project knowledge + custom instructions</td><td>Conversa diária, redação</td></tr>
-        <tr><td>ChatGPT</td><td>Custom GPT</td><td>Geração de copy, e-mails</td></tr>
-        <tr><td>Gemini</td><td>Gems</td><td>Idem</td></tr>
-        <tr><td>Claude Code</td><td><code>~/.claude/CLAUDE.md</code> ou skill</td><td>Tudo que sai do terminal</td></tr>
-        <tr><td>n8n / Zapier / Make</td><td>System prompt do node LLM</td><td>Automação: CRM, WhatsApp</td></tr>
-        <tr><td>WhatsApp / SAC</td><td>Agente (Z-API / ChatGuru / MCP)</td><td>Atendimento, follow-up</td></tr>
-        <tr><td>E-mail / propostas</td><td>Gera no Claude, copia, cola</td><td>Comunicação importante</td></tr>
-      </tbody>
-    </table>
-    <p style="margin-top: 1.5cqh; font-size: 1.4cqw; color: var(--cyan-deep); text-align: center;">
-      Mesmo guide. Múltiplos canais. <strong>Voz consistente em todos.</strong>
     </p>
     <div class="footer"><span class="brand">Voice Guide &nbsp;·&nbsp; <span class="at">@ericluciano</span></span></div>
   </section>
